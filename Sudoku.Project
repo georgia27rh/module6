@@ -1,4 +1,13 @@
-function solution = SudokuProject(sudoku_matrix)
-little_boxes(1:9,1:9) = {{(1:3),(1:3)}};
-little_boxes(4:6,:) = {{(4:6),(1:3)}};
-little_boxes(7:9,:) = {{(7:9),(1:3)}};
+input_grid = [];
+function solution = Sudoku_Solver(input_grid)
+solution = input_grid;
+submatA = input_grid[1:3, 1:3];
+submatB = input_grid[1:3, 4:6];
+submatC = input_grid[1:3, 7:9];
+submatD = input_grid[4:6, 1:3];
+submatE = input_grid[4:6, 4:6];
+submatF = input_grid[4:6, 7:9];
+submatG = input_grid[7:9, 1:3];
+submatH = input_grid[7:9, 4:6];
+submatI = input_grid[7:9, 7:9];
+end
