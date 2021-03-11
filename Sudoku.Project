@@ -90,4 +90,5 @@ while counter < 10
     end
     counter = counter + 1;
 end
+disp(solution);
 end
